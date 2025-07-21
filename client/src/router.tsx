@@ -14,27 +14,27 @@ const router = createBrowserRouter([
     children: [
       {
         element: <HomePage />,
-        path: "",
+        path: "home-page",
       },
       {
         element: <Landscape />,
-        path: "",
+        path: "landscape",
       },
       {
         element: <Portrait />,
-        path: "",
+        path: "portrait",
       },
       {
         element: <Toddler />,
-        path: "",
+        path: "toddler",
       },
       {
         element: <About />,
-        path: "",
+        path: "about",
       },
       {
         element: <Contact />,
-        path: "",
+        path: "contact",
       },
     ],
   },
