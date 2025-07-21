@@ -33,7 +33,6 @@ VALUES
 ("Entre terre et mer","marais salant","server/public/paysage/QuimiacMER (4).jpg"),
 ("Plage","Lanséria","server/public/paysage/Quimiacw end en bretagne_12.jpg"),
 ("Vieux bâteaux","Etel","server/public/paysage/W end famille Etel_6Bretagne Etel.jpg"),
-
 ("Manège","Nantes","server/public/Street/Nantes160F623A-95EB-43B4-9ABD-FF44C68E2A4E.jpg"),
 ("Place Royale","Nantes","server/public/Street/Nantes2016-02-12 14.30.56.jpg"),
 ("Passage Pommeray""Nantes""server/public/Street/Nantes17694154-8E2D-41C4-AE90-F49A55838514.jpg"),
@@ -48,9 +47,6 @@ VALUES
 ("Opposition","Trentemoult","server/public/Street/Nantestrentmoult_13.jpg"),
 ("Dragon","Nantes","server/public/Street/Royal DeluxeIMG_20150820_092721.jpg"),
 ("Sagrada","Barcelone""server/public/Street/Sagrada de Familia2ème jour- Sagrada Familia (15).jpg"),
-
-
-
 ("Vers la mer","Biscarosse","server/public/tout-petit/Dune et Landes_9.jpg"),
 ("Naissance","Nantes","server/public/tout-petit/IMG_6450.jpg"),
 ("Grossesse","Nantes","server/public/tout-petit/Louka (2).jpg"),
