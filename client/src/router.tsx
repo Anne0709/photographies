@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router";
 import App from "./App";
 import About from "./pages/AboutPage/AboutPage";
+import Add from "./pages/AddPage/AddPage";
 import Contact from "./pages/ContactPage/ContactPage";
+import Delete from "./pages/DeletePage/DeletePage";
 import HomePage from "./pages/HomePage/HomePage";
-import Landscape from "./pages/LandscapePage/LandscapePage";
-import Portrait from "./pages/ PortraitPage/PortraitPage";
-import Toddler from "./pages/ToddlerPage/ToddlerPage";
+import Update from "./pages/UpdatePage/UpdatePage";
 
 const router = createBrowserRouter([
   {
@@ -17,24 +17,24 @@ const router = createBrowserRouter([
         path: "home-page",
       },
       {
-        element: <Landscape />,
-        path: "landscape",
-      },
-      {
-        element: <Portrait />,
-        path: "portrait",
-      },
-      {
-        element: <Toddler />,
-        path: "toddler",
-      },
-      {
         element: <About />,
         path: "about",
       },
       {
         element: <Contact />,
         path: "contact",
+      },
+      {
+        element: <Add />,
+        path: "add",
+      },
+      {
+        element: <Delete />,
+        path: "delete",
+      },
+      {
+        element: <Update />,
+        path: "update",
       },
     ],
   },
