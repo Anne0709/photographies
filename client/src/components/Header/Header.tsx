@@ -4,11 +4,13 @@ import "./Header.css";
 const Header = () => {
   return (
     <header>
-      <h1>Je suis le header</h1>
-      <nav>
-        <Link to="about">A propos</Link>
-        <Link to="contact">Contact</Link>
-      </nav>
+      <section>
+        {/* <img src="/Nanou Photographie.png" alt="logo" /> */}
+        <nav className="nav-categories">
+          <Link to="about">A propos</Link>
+          <Link to="contact">Contact</Link>
+        </nav>
+      </section>
     </header>
   );
 };

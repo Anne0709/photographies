@@ -14,75 +14,23 @@ CREATE TABLE photo (
   id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR (200) NOT NULL,
   place VARCHAR (200) NOT NULL,
-  image VARCHAR (800) NOT NULL,
-  user_account_id INT NOT NULL,
-FOREIGN KEY (user_account_id) REFERENCES user_account(id)
+  image VARCHAR (800) NOT NULL
 );
-INSERT INTO photo (id, title, place, image, user_account_id)
+
+INSERT INTO photo (id, title, place, image)
 VALUES
-(1,"Bateau abandonné", "à Etel","server/public/paysage/20150704_170046Bretagne Etel.jpg",1),
-(2,"Avancée dans la mer", "Pleubian", "server/public/paysage/BretagneIMG_0539.JPG",1),
-(3,"Bateaux à l'abandon", "à Etel","server/public/paysage/Etel_7Bretagne Etel.jpg",1),
-(4,"Côte sauvage","à Quimiac","server/public/paysage/Pointe du RazIMG_4929.jpg",1),
-(5,"Pointe du Raz", "en Bretagne","server/public/paysage/Pointe du RazIMG_5167 (2).JPG",1),
-(6,"Mouillage de Lanséria","à Quimiac","server/public/paysage/Quimiac2021-06-06 11.20.36.jpg",1),
-(7,"Maison du pêcheur","à Quimiac", "server/public/paysage/Quimiac20171024_191656.jpeg",1),
-(8,"Marais salant","à Quimiac","server/public/paysage/QuimiacGourmandises (3).jpg",1),
-(9,"Coucher de soleil","à Lanséria","server/public/paysage/Quimiacimage000000-2.jpg",1),
-(10,"Côte","à Piriac","server/public/paysage/QuimiacIMG_3286.JPG",1),
-(11,"Côte fleurie","à Quimiac","server/public/paysage/QuimiacIMG_7018.JPEG",1),
-(12,"Mouillage","Piriac", "server/public/paysage/QuimiacIMG_8201.JPG",1),
-(13,"Tempête","à Kerquabellec","server/public/paysage/QuimiacMER (4).jpg",1),
-(14,"Entre terre et mer","marais salant","server/public/paysage/QuimiacMER (4).jpg",1),
-(15,"Plage","Lanséria","server/public/paysage/Quimiacw end en bretagne_12.jpg",1),
-(16,"Vieux bâteaux","Etel","server/public/paysage/W end famille Etel_6Bretagne Etel.jpg",1),
-(17,"Manège","Nantes","server/public/Street/Nantes160F623A-95EB-43B4-9ABD-FF44C68E2A4E.jpg",1),
-(18,"Place Royale","Nantes","server/public/Street/Nantes2016-02-12 14.30.56.jpg",1),
-(19,"Passage Pommeray","Nantes","server/public/Street/Nantes17694154-8E2D-41C4-AE90-F49A55838514.jpg",1),
-(20,"Les anneaux de Buren","Nantes","server/public/Street/NantesIMG_1483.JPEG",1),
-(21,"Jeux des yeux","Nantes","server/public/Street/NantesIMG_6500.jpg",1),
-(22,"Chateau des Ducs de Bretagne","Nantes","server/public/Street/NantesMiroir d'eau Nantes  (6).jpg",1),
-(23,"Chateau de Nantes","Nantes","server/public/Street/NantesMiroir d'eau Nantes (13).jpg",1),
-(24,"Tour Lu","Nantes","server/public/Street/NantesTour LU (2).jpg",1),
-(25,"Reflets","Nantes", "server/public/Street/NantesTour LU.jpg",1),
-(26,"scooters","Trentemoult","server/public/Street/Nantestrentmoult_4.jpg",1),
-(27,"Coloré","Nantes","server/public/Street/Nantestrentmoult_6.jpg",1),
-(28,"Opposition","Trentemoult","server/public/Street/Nantestrentmoult_13.jpg",1),
-(29,"Dragon","Nantes","server/public/Street/Royal DeluxeIMG_20150820_092721.jpg",1),
-(30,"Sagrada","Barcelone","server/public/Street/Sagrada de Familia2ème jour- Sagrada Familia (15).jpg",1),
-(31,"Vers la mer","Biscarosse","server/public/tout-petit/Dune et Landes_9.jpg",1),
-(32,"Naissance","Nantes","server/public/tout-petit/IMG_6450.jpg",1),
-(33,"Grossesse","Nantes","server/public/tout-petit/Louka (2).jpg",1),
-(34,"Petite main","Nantes","server/public/tout-petit/Louka 2 fév_1.jpg",1),
-(35,"Bientôt","Nantes","server/public/tout-petit/Louka_1 (2).jpg",1),
-(36,"Petit bonheur","Quimiac","server/public/tout-petit/P1040268.JPG",1),
-(37,"La joie de la plage","Quimiac","server/public/tout-petit/Quimiac (30).JPG",1),
-(38,"A croquer","Nantes","server/public/tout-petit/Simon 3 jours (9).JPG",1);
-
-
-
-
--- CREATE TABLE category (
---   id INT PRIMARY KEY AUTO_INCREMENT,
---   name VARCHAR (100) NOT NULL
-
--- );
--- INSERT INTO category (name)
--- VALUES
--- ("Paysage"),
--- ("Portrait"),
--- ("Tout petit");
-
-
-
--- CREATE TABLE category_photo (
---   photo_id INT NOT NULL,
---   category_id INT NOT NULL,
---   PRIMARY KEY (photo_id, category_id)
--- );
--- INSERT INTO category_photo (photo_id, category_id)
--- VALUES 
--- (1,1),
--- (2,1),
--- (3,2),
--- (4,2);
+(1,"Côte sauvage","Guérande","https://upload.wikimedia.org/wikipedia/commons/0/04/Le_croisic_la_cote_sauvage.jpg"),
+(2,"Côte sauvage", "Belle Ile", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Cote-sauvage-belle-ile.JPG/960px-Cote-sauvage-belle-ile.JPG"),
+(3, "Côte", "Le Croisic", "https://upload.wikimedia.org/wikipedia/commons/c/ce/Le_Croisic_cote_sauvage.jpg"),
+(4,"Pointe de Sorlock","à Quimiac","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Pointe_de_Sorlok_a_Quimiac.jpg/960px-Pointe_de_Sorlok_a_Quimiac.jpg"),
+(5,"Port", "Piriac", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Port_Piriac.jpg/960px-Port_Piriac.jpg"),
+(6,"Chemin des Douaniers","Quimiac","https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/C%C3%B4te_sauvage_%28Piriac%29_01.jpg/960px-C%C3%B4te_sauvage_%28Piriac%29_01.jpg"),
+(7,"Marais de la Brière", "Mesquer", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Bri%C3%A8re_9.jpg/1280px-Bri%C3%A8re_9.jpg"),
+(8,"Maison à toit de chaume","Saint-Lyphard", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Kerhinet_%28Saint-Lyphard%29_01.jpg/1920px-Kerhinet_%28Saint-Lyphard%29_01.jpg"),
+(9,"Port de la Turballe", "La Turballe", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Turballe_port.JPG/1280px-Turballe_port.JPG"),
+(10,"Pointe du Castelli", "Piriac", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/S%C3%A9maphore_Piriac_1.jpg/1280px-S%C3%A9maphore_Piriac_1.jpg"),
+(11,"La grotte à Madame", "Piriac", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Piriac_Madame_IMG_20220422_111616_mod.jpg/1280px-Piriac_Madame_IMG_20220422_111616_mod.jpg"),
+(12,"Pointe du Raz", "Finistère","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/0_La_Pointe_du_Raz_%C3%A0_Plogoff_%281%29.JPG/1280px-0_La_Pointe_du_Raz_%C3%A0_Plogoff_%281%29.JPG"),
+(13,"Côte","Finistere","https://upload.wikimedia.org/wikipedia/commons/c/c5/C%C3%B4te_nord_Cap_Sizun.jpg"),
+(14,"Cap Sizun","Bretagne","https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/965_Cl%C3%A9den-Cap-Sizun_Vorlen.jpg/1280px-965_Cl%C3%A9den-Cap-Sizun_Vorlen.jpg"),
+(15,"Port","Le Pouliguen","https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Quai_Jules_Sandeau.jpg/1280px-Quai_Jules_Sandeau.jpg");

@@ -17,8 +17,8 @@ class PhotoRepository {
 
   async create(body: Photo) {
     const [result] = await DatabaseClient.query<Result>(
-      "INSERT INTO photo (title, place,image, user_account_id) VALUES (?,?,?,?)",
-      [body.title, body.place, body.image, body.user_account_id],
+      "INSERT INTO photo (title, place,image) VALUES (?,?,?)",
+      [body.title, body.place, body.image],
     );
     return result.affectedRows;
   }
