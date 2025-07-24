@@ -1,50 +1,72 @@
-import { Link, useNavigate, useParams } from "react-router";
-import "./EditPage.css";
+import { Link, useParams, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
+import "./EditPage.css";
 
 function Edit() {
   const [photo, setPhoto] = useState<Photo>();
-  const { photoId } = useParams();
+  const { id } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3310/api/photo/${photoId}`)
+    fetch(`http://localhost:3310/api/photo/${id}`)
 
       .then((res) => res.json())
       .then((data) => setPhoto(data[0]));
-  }, [photoId]);
+  }, [id]);
 
   if (!photo) {
     return <h1>Oups 😳</h1>;
   }
 
-  const handleOnSubmit = () => {
-    fetch(`http://localhost:3310/api/photo/${photoId}`, {
-      method: "delete",
+  const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const formObject = Object.fromEntries(formData.entries());
+
+    fetch(`http://localhost:3310/api/photo/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formObject),
+    })
+      .then((res) => res.json())
+      .then(() => {
+        <h1>Photo modifiée 🎊</h1>;
+
+        return fetch(`http://localhost:3310/api/photo/${id}`)
+          .then((res) => res.json())
+          .then((data) => {
+            setPhoto(data[0]);
+          });
+      });
+  };
+  const handleOnDelete = () => {
+    fetch(`http://localhost:3310/api/photo/${id}`, {
+      method: "DELETE",
     }).then((res) => {
-      if (res.status === 200) {
+      if (res.ok) {
         navigate("/");
       }
     });
   };
 
   return (
-    <main className="delete">
+    <main className="edit">
       <h1>Page Supprimer et modifier</h1>
       <section>
-        <figure key={photoId}>
-          <img src={photo.image} alt={photo.title} />
+        <figure key={id}>
+          <img src={`http://localhost:3310${photo.image}`} alt={photo.title} />
           <figcaption>{photo.title}</figcaption>
         </figure>
-        <article>
-          <Link to={`/photo/${photo.id}`}>
-            <button type="button">Modifier</button>
+
+        <article onSubmit={handleOnSubmit}>
+          <Link to={`/update/${photo.id}`} key={id}>
+            Modifier
           </Link>
-          <Link to="">
-            <button type="button" onClick={handleOnSubmit}>
-              Supprimer
-            </button>{" "}
-          </Link>
+          <button type="button" onClick={handleOnDelete}>
+            Supprimer{" "}
+          </button>{" "}
         </article>
       </section>
     </main>

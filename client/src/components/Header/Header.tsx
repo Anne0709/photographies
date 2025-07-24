@@ -5,14 +5,10 @@ const Header = () => {
   return (
     <header>
       <section>
-        <img src="/Nanou Photographie.png" alt="logo" />
+        {/* <img src="/Nanou Photographie.png" alt="logo" /> */}
         <nav className="nav-categories">
-          <Link to="about">
-            <span>A propos</span>
-          </Link>
-          <Link to="contact">
-            <span>Contact</span>
-          </Link>
+          <Link to="about">A propos</Link>
+          <Link to="contact">Contact</Link>
         </nav>
       </section>
     </header>

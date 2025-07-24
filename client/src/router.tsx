@@ -30,11 +30,11 @@ const router = createBrowserRouter([
       },
       {
         element: <Edit />,
-        path: "edit",
+        path: "edit/:id",
       },
       {
         element: <Update />,
-        path: "update",
+        path: "update/:id",
       },
     ],
   },

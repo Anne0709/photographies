@@ -15,18 +15,15 @@ function HomePage() {
   }
   return (
     <main className="home-page">
-      <h1>Je suis la home page</h1>
       <Link to="/add" className="add-photo-link">
         Ajouter
       </Link>
+      <h1>Bienvenue dans ma gallerie</h1>
+
       {photos.map((photo) => (
         <Link to={`/edit/${photo.id}`} key={photo.id} className="photo-link">
-          <figure>
-            <img
-              src={`http://localhost:3310${photo.image}`}
-              alt={photo.title}
-              loading="lazy"
-            />
+          <figure key={photo.id}>
+            <img src={photo.image} alt={photo.title} />
             <figcaption>{photo.title}</figcaption>
           </figure>
         </Link>

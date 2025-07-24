@@ -26,6 +26,7 @@ const readPhotoById: RequestHandler = async (req, res, next) => {
 };
 
 const create: RequestHandler = async (req, res, next) => {
+  console.log(req.body);
   try {
     const create = await photoRepository.create(req.body);
     if (create) {
