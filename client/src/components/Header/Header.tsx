@@ -4,11 +4,16 @@ import "./Header.css";
 const Header = () => {
   return (
     <header>
-      <section>
-        {/* <img src="/Nanou Photographie.png" alt="logo" /> */}
+      <section className="essai">
+        <img className="logo" src="/Logo-photos.png" alt="logo" />
+
         <nav className="nav-categories">
-          <Link to="about">A propos</Link>
-          <Link to="contact">Contact</Link>
+          <Link to="about">
+            <span>A propos</span>
+          </Link>
+          <Link to="contact">
+            <span>Contact</span>
+          </Link>
         </nav>
       </section>
     </header>

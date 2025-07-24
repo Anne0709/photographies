@@ -1,3 +1,20 @@
 footer {
-  background-color: rgb(241, 177, 177);
+  background-color: rgb(84, 86, 86);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 50px;
+
+  nav {
+    width: 160px;
+  }
+  a {
+    /* border: 2px solid yellowgreen; */
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
 }
