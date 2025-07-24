@@ -60,11 +60,11 @@ function Edit() {
           <figcaption>{photo.title}</figcaption>
         </figure>
 
-        <article onSubmit={handleOnSubmit}>
+        <article className="button" onSubmit={handleOnSubmit}>
           <Link to={`/update/${photo.id}`} key={id}>
             Modifier
           </Link>
-          <button type="button" onClick={handleOnDelete}>
+          <button className="delete" type="button" onClick={handleOnDelete}>
             Supprimer{" "}
           </button>{" "}
         </article>

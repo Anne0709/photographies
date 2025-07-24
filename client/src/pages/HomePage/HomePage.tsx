@@ -18,7 +18,7 @@ function HomePage() {
       <Link to="/add" className="add-photo-link">
         Ajouter
       </Link>
-      <h1>Bienvenue dans ma gallerie</h1>
+      <h1>Bienvenue dans ma petite gallerie</h1>
 
       {photos.map((photo) => (
         <Link to={`/edit/${photo.id}`} key={photo.id} className="photo-link">

@@ -6,14 +6,16 @@
   gap: 10px;
 
   figcaption {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: White;
   }
 
   h1 {
-    font-size: 1.3rem;
+    flex-basis: 100%;
+    font-size: 1rem;
     color: white;
     margin: 80px 10px 10px 10px;
+    text-align: center;
   }
 
   img {
@@ -29,14 +31,34 @@
     right: 40px;
     top: 90px;
   }
+}
+@media screen and (min-width: 455px) and (max-width: 992px) {
+  .home-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  @media screen and (min-width: 992px) {
-    .home-page {
-      background-color: aqua;
-      img {
-        width: 500px;
-        height: 500px;
-      }
+    figure {
+      width: 320px;
+      height: 320px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .home-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 400px;
+      height: 400px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
     }
   }
 }

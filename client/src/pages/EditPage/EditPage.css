@@ -1,12 +1,16 @@
 .edit {
-  background-color: rgb(155, 217, 196);
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 
+  h1 {
+    color: white;
+  }
+
   figure {
-    border: 2px solid red;
+    border: 2px solid rgb(253, 252, 252);
 
     img {
       object-fit: cover;
@@ -15,10 +19,27 @@
     }
   }
 
-  button {
+  .button {
+    display: flex;
+    justify-content: space-around;
     height: 30px;
-    width: 110px;
+    width: 160px;
     cursor: pointer;
     margin: 0 auto;
+    gap: 15px;
+  }
+  a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #efefef;
+    font-size: 13.3333;
+
+    padding: 1px 6px;
+  }
+  .delete {
+    border: none;
   }
 }
