@@ -1,8 +1,8 @@
 import { Link, useNavigate, useParams } from "react-router";
-import "./DeletePage.css";
+import "./EditPage.css";
 import { useEffect, useState } from "react";
 
-function Delete() {
+function Edit() {
   const [photo, setPhoto] = useState<Photo>();
   const { photoId } = useParams();
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function Delete() {
   }, [photoId]);
 
   if (!photo) {
-    return <h1>probleme</h1>;
+    return <h1>Oups 😳</h1>;
   }
 
   const handleOnSubmit = () => {
@@ -32,21 +32,23 @@ function Delete() {
     <main className="delete">
       <h1>Page Supprimer et modifier</h1>
       <section>
-        <figure>
+        <figure key={photoId}>
           <img src={photo.image} alt={photo.title} />
-          <figcaption>{}</figcaption>
+          <figcaption>{photo.title}</figcaption>
         </figure>
         <article>
           <Link to={`/photo/${photo.id}`}>
             <button type="button">Modifier</button>
           </Link>
-          <button type="button" onClick={handleOnSubmit}>
-            Supprimer
-          </button>
+          <Link to="">
+            <button type="button" onClick={handleOnSubmit}>
+              Supprimer
+            </button>{" "}
+          </Link>
         </article>
       </section>
     </main>
   );
 }
 
-export default Delete;
+export default Edit;
