@@ -8,6 +8,9 @@ const Header = () => {
         <img className="logo" src="/logo-noir-et-blanc.png" alt="logo" />
 
         <nav className="nav-categories">
+          <Link to="/">
+            <span>Accueil</span>
+          </Link>
           <Link to="about">
             <span>A propos</span>
           </Link>
