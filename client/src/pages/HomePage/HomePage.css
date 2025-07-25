@@ -38,6 +38,8 @@ img {
   position: absolute;
   right: 40px;
   top: 90px;
+
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 455px) and (max-width: 992px) {
@@ -67,6 +69,11 @@ img {
 
     h1 {
       font-size: 1.8rem;
+    }
+    .add-photo-link {
+      width: 80px;
+      height: 40px;
+      font-size: 1.5rem;
     }
   }
 }
