@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <section className="essai">
-        <img className="logo" src="/Logo-photos.png" alt="logo" />
+        <img className="logo" src="/logo-noir-et-blanc.png" alt="logo" />
 
         <nav className="nav-categories">
           <Link to="about">

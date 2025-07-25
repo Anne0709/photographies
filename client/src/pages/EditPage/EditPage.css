@@ -1,4 +1,5 @@
 .edit {
+  min-height: calc(100vh - 15px - 100px);
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -9,9 +10,16 @@
     color: white;
   }
 
+  .back {
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 70px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+  }
   figure {
-    border: 2px solid rgb(253, 252, 252);
-
     img {
       object-fit: cover;
       width: 300px;
@@ -23,7 +31,7 @@
     display: flex;
     justify-content: space-around;
     height: 30px;
-    width: 160px;
+    width: 180px;
     cursor: pointer;
     margin: 0 auto;
     gap: 15px;
@@ -36,10 +44,22 @@
     text-decoration: none;
     background-color: #efefef;
     font-size: 13.3333;
-
     padding: 1px 6px;
   }
   .delete {
     border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .edit {
+    figure {
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
   }
 }

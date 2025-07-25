@@ -17,4 +17,8 @@ footer {
     font-size: 1rem;
     cursor: pointer;
   }
+  img {
+    width: 40px;
+    Height: 40px;
+  }
 }
