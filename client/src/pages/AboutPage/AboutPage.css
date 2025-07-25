@@ -1,0 +1,24 @@
+.about {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  img {
+    justify-content: center;
+  }
+  .text {
+    h1 {
+      font-size: 1.7rem;
+      margin: 10px 10px 50px 10px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .about {
+    padding: 120px;
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
