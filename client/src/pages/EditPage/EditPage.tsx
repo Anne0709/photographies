@@ -53,10 +53,16 @@ function Edit() {
 
   return (
     <main className="edit">
+      {" "}
+      <Link to="/">
+        <button className="back" type="button">
+          Retour
+        </button>
+      </Link>
       <h1>Page Supprimer et modifier</h1>
       <section>
         <figure key={id}>
-          <img src={`http://localhost:3310${photo.image}`} alt={photo.title} />
+          <img src={photo.image} alt={photo.title} />
           <figcaption>{photo.title}</figcaption>
         </figure>
 
