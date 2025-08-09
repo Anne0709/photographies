@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import "./AddPage.css";
 
 function Add() {
@@ -27,9 +27,6 @@ function Add() {
   return (
     <main className="add-photo">
       <section>
-        <Link to="/">
-          <button type="button">Retour</button>
-        </Link>
         <h1>Ajouter votre photo</h1>
         <form className="form" action={handleOnSubmit}>
           <label htmlFor="title">Titre</label>
@@ -41,7 +38,9 @@ function Add() {
           <label htmlFor="image">Image URL</label>
           <input id="image" type="text" name="image" />
 
-          <button type="submit">Ajouter</button>
+          <button className="add" type="submit">
+            Ajouter
+          </button>
         </form>
       </section>
     </main>
