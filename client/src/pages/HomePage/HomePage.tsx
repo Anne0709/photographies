@@ -16,7 +16,7 @@ function HomePage() {
   return (
     <main className="home-page">
       <Link to="/add" className="add-photo-link">
-        Ajouter
+        +
       </Link>
       <img className="big-logo" src="/logo-noir-et-blanc.png" alt="logo" />
       <h1>Bienvenue dans ma petite gallerie</h1>

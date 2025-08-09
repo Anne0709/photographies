@@ -17,6 +17,8 @@
 }
 a {
   text-decoration: none;
+  border-radius: 15%;
+  text-align: center;
 }
 
 h1 {
@@ -35,6 +37,7 @@ img {
 }
 .add-photo-link {
   color: white;
+  background-color: gray;
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -78,6 +81,11 @@ img {
       font-size: 1.5rem;
       right: 40px;
       top: 140px;
+    }
+    a {
+      text-decoration: none;
+      border-radius: 100%;
+      text-align: center;
     }
   }
 }
