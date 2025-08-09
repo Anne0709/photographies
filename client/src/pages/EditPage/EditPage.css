@@ -8,8 +8,9 @@
 
   h1 {
     color: white;
+    padding: 15px;
   }
-
+  /* 
   .back {
     cursor: pointer;
     border: none;
@@ -18,7 +19,7 @@
     position: absolute;
     top: 80px;
     left: 40px;
-  }
+  } */
   figure {
     img {
       object-fit: cover;
@@ -32,11 +33,11 @@
     justify-content: space-around;
     height: 30px;
     width: 180px;
-    cursor: pointer;
     margin: 0 auto;
     gap: 15px;
   }
   a {
+    border: 1px solid red;
     color: black;
     display: flex;
     align-items: center;
@@ -45,17 +46,20 @@
     background-color: #efefef;
     font-size: 13.3333;
     padding: 1px 6px;
+    cursor: pointer;
   }
   .delete {
     border: none;
+    cursor: pointer;
+    border: 1px solid blue;
   }
 }
 @media screen and (min-width: 768px) {
   .edit {
     figure {
       img {
-        width: 500px;
-        height: 500px;
+        width: 450px;
+        height: 450px;
       }
     }
     h1 {

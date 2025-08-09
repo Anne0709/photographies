@@ -54,11 +54,11 @@ function Edit() {
   return (
     <main className="edit">
       {" "}
-      <Link to="/">
+      {/* <Link to="/">
         <button className="back" type="button">
           Retour
         </button>
-      </Link>
+      </Link> */}
       <h1>Page Supprimer et modifier</h1>
       <section>
         <figure key={id}>
