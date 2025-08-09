@@ -1,5 +1,5 @@
 header {
-  background-color: rgb(84, 86, 86);
+  background-color: black;
   display: flex;
   align-items: center;
   height: 50px;
@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-basis: 100%;
+    border-bottom: 0.1rem solid white;
 
     .logo {
       margin: 13px 5px 5px 0;

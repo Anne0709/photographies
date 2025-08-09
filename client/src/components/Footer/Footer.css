@@ -1,15 +1,17 @@
 footer {
-  background-color: rgb(84, 86, 86);
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: end;
   height: 50px;
+  border-top: 0.1rem solid white;
 
   nav {
     width: 160px;
+    display: flex;
+    justify-content: end;
   }
   a {
-    /* border: 2px solid yellowgreen; */
     font-size: 0.8rem;
     text-decoration: none;
     margin: 8px;
@@ -18,7 +20,7 @@ footer {
     cursor: pointer;
   }
   img {
-    width: 40px;
-    Height: 40px;
+    width: 30px;
+    Height: 30px;
   }
 }
