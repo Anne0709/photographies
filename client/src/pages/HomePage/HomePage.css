@@ -37,13 +37,25 @@ img {
 }
 .add-photo-link {
   color: white;
-  background-color: gray;
+  /* background-color: gray; */
   cursor: pointer;
   position: absolute;
   right: 20px;
   top: 120px;
   padding: 5px;
-  font-size: 1rem;
+  font-size: 2rem;
+  box-shadow:
+    rgba(249, 248, 248, 0.25) 0px 54px 55px, rgba(236, 231, 231, 0.12) 0px -12px 30px, rgba(
+      242,
+      221,
+      221,
+      0.12
+    ) 0px 4px 6px, rgba(238, 232, 232, 0.17) 0px 12px 13px, rgba(
+      251,
+      248,
+      248,
+      0.09
+    ) 0px -3px 5px;
 }
 
 @media screen and (min-width: 455px) and (max-width: 992px) {

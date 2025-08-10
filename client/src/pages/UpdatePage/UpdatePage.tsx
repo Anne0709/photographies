@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./UpdatePage.css";
-import { Link, useParams } from "react-router";
+import { useParams } from "react-router";
 
 function Update() {
   const [photo, setPhoto] = useState<Photo>();
@@ -44,9 +44,6 @@ function Update() {
     <main className="update">
       <h1>Modifier votre photo</h1>
       <section>
-        <Link to="/">
-          <button type="button">Retour</button>
-        </Link>
         <form className="form" onSubmit={handleOnSubmit}>
           <label htmlFor="title">Titre</label>
           <input type="text" name="title" defaultValue={photo.title} />
